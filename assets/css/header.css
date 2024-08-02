@@ -1,0 +1,44 @@
+header {
+  /* Sempre vai ficar lá em cima */
+  position: fixed;
+  /* 10ª camada */
+  z-index: 10;
+  inset: 0 0 auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  height: 5rem;
+  background-color: var(--background);
+}
+
+header .logo {
+  width: 10rem;
+  height: 3.3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Imagem padrão */
+  background-image: url(../images/logo-black.png);
+  cursor: pointer;
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Imagem do dark mode */
+@media (prefers-color-scheme: dark) {
+  header .logo {
+    background-image: url(../images/logo-white.png);
+  }
+}
+/* O header só vai aparecer em dispositivos móveis */
+@media (width > 900px) {
+  /* Em computador não aparece */
+  header {
+    display: none;
+  }
+}

@@ -41,3 +41,15 @@ body {
   font-size: 1.6rem;
   min-height: 100%;
 }
+
+.icon {
+  /* Para aceitar altura e largura */
+  display: inline-block;
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+/* Cor padrão do svg */
+.icon svg {
+  color: var(--primary);
+}
