@@ -3,29 +3,72 @@ main {
 }
 
 main nav {
+  /* Não aparecerá no mobile, só no desktop */
   display: none;
   position: fixed;
+  /* Já que a position é fixed, aqui eu coloco sua posição */
   inset: 0 auto 0 0;
   border-right: 1px solid var(--secondary-foreground);
   padding: 2rem 1rem;
 }
 
+/* Área que contém o feed e o aside */
 main .area {
   display: flex;
   justify-content: center;
   gap: 3rem;
 }
-
+/* No celular o feed pega toda a tela */
 main .area .feed-content {
   width: 100%;
 }
 
-/* não aparece no celular */
+/* não aparece no celular, mas já deixo pronto */
 main .area aside {
   display: none;
   width: 30rem;
 }
 
+/* MENU NAV */
+main nav .logo {
+  display: none;
+  width: 10rem;
+  height: 3.3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 1rem 0 3rem 1rem;
+  background-image: url(../images/logo-black.png);
+}
+
+/* Textos do menu nav (ficam do lado do ícone) */
+main nav li a {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.7rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: all ease 0.5s;
+}
+
+main nav li a:hover {
+  background-color: var(--secondary-foreground);
+}
+
+/* Se alguma tag a tiver a classe active, vai aplicar */
+main nav li a.active {
+  font-weight: bold;
+}
+/* Os textos Não aparecem no mobile, só no desktop */
+main nav a span {
+  display: none;
+}
+
+/* BREAKPOINTS */
 @media (width > 900px) {
   main {
     padding: 2rem 0 0 6rem;
@@ -53,5 +96,20 @@ main .area aside {
 
   main nav {
     width: 24rem;
+  }
+
+  main nav .logo {
+    display: block;
+  }
+
+  main nav a span {
+    display: block;
+  }
+}
+
+/* DARK MODE DA LOGO */
+@media (prefers-color-scheme: dark) {
+  main nav .logo {
+    background-image: url(../images/logo-white.png);
   }
 }
