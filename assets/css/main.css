@@ -37,18 +37,21 @@ main nav .logo {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
+  /* para não enconstar nos lados e empurrar o menu pra baixo */
   margin: 1rem 0 3rem 1rem;
   background-image: url(../images/logo-black.png);
 }
 
 /* Textos do menu nav (ficam do lado do ícone) */
 main nav li a {
+  /* como tenho logo e texto, deixo um do lado do outro */
   display: flex;
   align-items: center;
   gap: 1.5rem;
   text-decoration: none;
   color: var(--primary);
   font-size: 1.7rem;
+  /* não encostar nas laterais */
   padding: 1rem;
   border-radius: 1rem;
   margin: 1rem 0;
@@ -59,10 +62,11 @@ main nav li a:hover {
   background-color: var(--secondary-foreground);
 }
 
-/* Se alguma tag a tiver a classe active, vai aplicar */
+/* Se alguma tag <a> tiver a classe active, vai aplicar */
 main nav li a.active {
   font-weight: bold;
 }
+
 /* Os textos Não aparecem no mobile, só no desktop */
 main nav a span {
   display: none;

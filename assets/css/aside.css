@@ -1,0 +1,59 @@
+/* Padronizando os lnks do aside */
+aside a {
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--side-link);
+}
+
+aside a:hover {
+  color: var(--primary);
+}
+
+/* Área do usuário que vai ter as 3 divs */
+aside .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* Adicionando a borda cinza do story */
+aside .user-avatar {
+  border: 2px solid var(--secondary-foreground);
+  border-radius: 50%;
+  /* O padding é quem vai dar o efeito na borda, é o espaço entre a borda e a img */
+  padding: 0.2rem;
+  /* Para alinhar a foto no centro da borda */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tamanho da foto do usuário */
+aside .user-avatar img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+
+aside .user-info {
+  flex: 1;
+  overflow-x: hidden;
+}
+
+aside .user-username {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  /* As propriedades abaixo vão gerar um efeito caso o texto seja grande */
+  /* Se o texto passar da área, ele corta o texto e coloca 3 pontos */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+aside .user-name {
+  color: var(--secondary-foreground);
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
