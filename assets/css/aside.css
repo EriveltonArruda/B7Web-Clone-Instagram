@@ -16,6 +16,7 @@ aside .user {
   align-items: center;
   gap: 1rem;
 }
+
 /* Adicionando a borda cinza do story */
 aside .user-avatar {
   border: 2px solid var(--secondary-foreground);
@@ -53,6 +54,87 @@ aside .user-username {
 aside .user-name {
   color: var(--secondary-foreground);
   font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* SUGESTÕES */
+/* área do card */
+aside .card {
+  margin-top: 2rem;
+}
+
+/* header de sugestões */
+aside .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Título das sugestões */
+aside .card-title {
+  color: var(--secondary-foreground);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Botão do header de sugestões */
+aside .card-actions a {
+  font-size: 1.3rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* área de conteúdo do card */
+aside .card-body {
+  /* Como vão ficar um abaixo do outro, deixo flex */
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin: 1.5rem 0;
+}
+
+/* área com a foto, o nome e o botão de seguir */
+aside .suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Foto da sugestão */
+aside .suggestion-avatar img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+/* área do texto da sugestão */
+aside .suggestion-info {
+  flex: 1;
+}
+
+/* texto da sugestão */
+aside .suggestion-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+  /* As propriedades abaixo vão gerar um efeito caso o texto seja grande */
+  /* Se o texto passar da área, ele corta o texto e coloca 3 pontos */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* nome da sugestão */
+aside .suggestion-text {
+  display: block;
+  color: var(--secondary-foreground);
+  font-size: 1.4rem;
+  /* As propriedades abaixo vão gerar um efeito caso o texto seja grande */
+  /* Se o texto passar da área, ele corta o texto e coloca 3 pontos */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
