@@ -18,6 +18,7 @@ footer .avatar img {
   border-radius: 50%;
 }
 
+/* Só vai aparecer em tablet e celular */
 @media (width > 900px) {
   footer {
     display: none;
