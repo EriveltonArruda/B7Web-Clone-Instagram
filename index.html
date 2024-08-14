@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/aside.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/feed.css" />
   </head>
   <body>
     <header>
@@ -196,7 +197,71 @@
         </ul>
       </nav>
       <section class="area">
-        <div class="feed-content">Content</div>
+        <div class="feed-content">
+          <!-- Área dos stories -->
+          <div class="stories"></div>
+          <!-- Área do feed -->
+          <!-- Nessa área do feed teremos a seguinte estrutura: -->
+          <!-- uma área superior (header) que terá na esquerda a foto e o nome do usuário e do lado direito os 3 pontos  -->
+          <!-- Depois a própria postagem (é só uma foto) -->
+          <!-- Depois uma área com 3 ícones na esquerda e no lado direito oícone de salvar -->
+          <!-- Logo abaixo teremos uma área de curtida -->
+          <!-- Abaixo dela temos a área de comentário -->
+          <!-- Abaixo temos a área com um texto de quantos dias foi postada a foto -->
+          <div class="feed">
+            <!-- postagem -->
+            <div class="imte">
+              <div class="header">
+                <!-- informações do usuário (foto e nome) -->
+                <a href="" class="avatar">
+                  <img src="./assets/images/avatars/1.jpg" alt="" />
+                  <p>joaosilva</p>
+                </a>
+                <!-- área de ícone (três pontos) -->
+                <div class="icon">
+                  <!-- more.svg -->
+                </div>
+              </div>
+              <!-- body do feed -->
+              <div class="body">
+                <img src="./assets/images/feed/img.jpg" alt="" />
+              </div>
+              <!-- lista dos botões -->
+              <div class="buttons">
+                <div class="left">
+                  <div class="icon">
+                    <!-- heart.svg -->
+                  </div>
+                  <div class="icon">
+                    <!-- message.svg -->
+                  </div>
+                  <div class="icon">
+                    <!-- share.svg -->
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="icon">
+                    <!-- save.svg -->
+                  </div>
+                </div>
+              </div>
+              <!-- curtidas -->
+              <div class="likes">
+                <p>
+                  Curtido por <span>fulano</span> e <span>outras pessoas</span>
+                </p>
+              </div>
+              <!-- área dos comentários -->
+              <div class="comments">
+                <p><span>joaosilva</span> Texto qualquer</p>
+              </div>
+              <!-- Data da postagem -->
+              <div class="info">
+                <p>Há 2 dias</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <aside>
           <!-- User -->
           <!-- Aqui será criada a área do usuário -->
