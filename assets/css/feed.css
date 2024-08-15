@@ -1,0 +1,90 @@
+.feed {
+  /* respiro entre o footer e os ícones */
+  padding-bottom: 2rem;
+}
+
+/* Header do feed */
+.feed .item .header {
+  display: flex;
+  /* foto do lado esquerdo e o ícone no lado direito */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.feed .item .header .icon {
+  cursor: pointer;
+}
+
+/* avatar do feed */
+.feed .item .header .avatar {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1.5rem;
+}
+
+/* imagem do avatar */
+.feed .item .header .avatar img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+/* nome do usuário da postagem */
+.feed .item .header .avatar p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* imagem do feed */
+.feed .item .body img {
+  width: 100%;
+  height: auto;
+}
+
+/* Área dos botões (da esquerda e direita) */
+.feed .item .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.feed .item .buttons .icon {
+  cursor: pointer;
+}
+
+/* Área esquerda e direita onde estão os ícones */
+.feed .item .buttons .left,
+.feed .item .buttons .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Área dos likes */
+.feed .item .likes {
+  padding: 0 1rem;
+}
+
+.feed .item .likes span {
+  font-weight: bold;
+}
+
+/* Área geral dos comentários */
+.feed .item .comments {
+  padding: 1rem;
+}
+
+/* Texto do comentário */
+.feed .item .comments span {
+  font-weight: bold;
+}
+
+.feed .item .info {
+  color: var(--secondary-foreground);
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}
