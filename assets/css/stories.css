@@ -55,3 +55,34 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Área onde ficarão as setas */
+.story-left,
+.story-right {
+  position: absolute;
+  width: 3rem;
+  height: 6.5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Estilização das setas */
+.story-left .icon-area,
+.story-right .icon-area {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+/* Posição das setas */
+.story-left {
+  left: 1rem;
+}
+
+.story-right {
+  right: 1rem;
+}

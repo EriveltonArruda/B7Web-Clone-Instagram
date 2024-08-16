@@ -21,6 +21,8 @@ main .area {
 /* No celular o feed pega toda a tela */
 main .area .feed-content {
   width: 100%;
+  /* posição para as setas */
+  position: relative;
 }
 
 /* não aparece no celular, mas já deixo pronto */
