@@ -1,0 +1,57 @@
+/* Área geral dos stories */
+.stories {
+  width: 100%;
+  padding: 1rem 0;
+  /* Se as imagens passarem da largura, uma barra de scroll será adicionada */
+  overflow-x: auto;
+  /* porém, eu vou tirar ela */
+  scrollbar-width: none;
+}
+
+/* Área de cada story */
+.stories .scroll {
+  display: flex;
+  gap: 2rem;
+}
+/* área do avatar e do texto */
+.stories .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Aqui será adicionado o efeito da borda colorida */
+.stories .item .avatar {
+  width: 6.5rem;
+  height: 6.5rem;
+  /* Será um fundo colorido */
+  background: linear-gradient(
+    45deg,
+    var(--story-color1) 0%,
+    var(--story-color2) 100%
+  );
+  /* pra dar a sensação da borda, coloco border radius */
+  border-radius: 50%;
+  /* e centralizo o background no avatar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* espaço da imagem e o texto */
+  margin-bottom: 1rem;
+}
+
+/* imagem do story */
+.stories .item .avatar img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid var(--secondary);
+}
+
+.stories .item p {
+  font-size: 1.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
